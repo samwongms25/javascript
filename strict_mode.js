@@ -1,6 +1,8 @@
-let myName = 'Sam Wong'
+
 
 function readName() {
+  "use strict"
+  var myName = "lemy"
   console.log(myName)
 }
 
