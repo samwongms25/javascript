@@ -1,9 +1,13 @@
+//alert("be careful")
 
 
-function readName() {
-  "use strict"
-  var myName = "lemy"
-  console.log(myName)
+for (var i = 0; i < 10; i++) {
+  console.log(i);
 }
 
-readName()
+
+"use strict"
+var myName = "lemy"
+console.log(myName, i)
+
+
