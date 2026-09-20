@@ -1,8 +1,1 @@
-console.log(this)
-let o = {
-    g: function () {
-        console.log(this);
-    }
-
-}
-
+console.log(this, 5 * 6)
