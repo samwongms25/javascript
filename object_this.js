@@ -1,1 +1,6 @@
-console.log(this, 5 * 6)
+var m = {
+    get: function () {
+        console.log(this)
+    }
+}
+m.get()
