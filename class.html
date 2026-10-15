@@ -11,15 +11,19 @@
 <title>Title</title>
 </head>
 <body>
+    <span>
+        javascript class is a template for creating objects. It encapsulates data with code to work on that data. Classes in JavaScript are built on prototypes but also have some syntax and semantics that are unique to classes. The class syntax does not introduce a new object-oriented inheritance model to JavaScript. It is a syntactical sugar over JavaScript's existing prototype-based inheritance and does not provide a new object-oriented inheritance model.
+    </span>
     <script>
         class Student {
-            constructor(name, age, gender) {
+            constructor(name, age, gender, subjects) {
                 this.name = name;
                 this.age = age;
                 this.gender = gender;
+                this.subjects = subjects;
             }
             display() {
-                console.log(`My Name is : ${this.name}, Age: ${this.age}, Gender: ${this.gender}`);
+                console.log(`My Name is : ${this.name}, Age: ${this.age}, Gender: ${this.gender}, Subjects: ${this.subjects}`);
             }
         }
     </script>
