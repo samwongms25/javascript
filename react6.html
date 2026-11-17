@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>React! React! React!</title>
+<script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<style>
+#r {
+padding: 190px;
+//background-color: #1ff;
+}
+
+</style>
+</head>
+<body>
+<div id="r"></div>
+<script type="text/babel">
+    var Letter = React.createClass({
+        render: function() {
+            var s ={
+            padding: 10,
+            border: 30,
+            backgroundColor: this.props.color,
+            fontWeight: "bold",
+            color: "#f33",
+            display: "inline-block",
+            margin: 20,
+            fontSize: 80,
+            fontFamily: "fantasy",
+            textAlign: "center",
+            };
+            return (
+                <div style={s}>
+                    {this.props.children}
+                </div>
+            );
+        }
+    });
+
+    var sn = document.querySelector("#r");
+    ReactDOM.render(
+        <div>
+            <Letter color="#9fde00">H</Letter>
+            <Letter color="#900e00">e</Letter>
+            <Letter color="#f00fff">l</Letter>
+            <Letter color="#0fffff">l</Letter>
+            <Letter color="#ffde00">o</Letter>
+        </div>,
+        sn
+    );
+</script>
+</body>
+</html>
