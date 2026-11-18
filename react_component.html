@@ -18,28 +18,55 @@ background-color: #fff;
 <script type="text/babel">
     var Square = React.createClass({
         render: function() {
-            
+            var squareStyle = {
+                height: 100,
+                backgroundColor: '#ff6663',
+            }
             return (
-                <p>Nothing to see here</p>
+                <div style={squareStyle}>
+                    </div>
+            );
+        }
+    });
+
+    var Square2 = React.createClass({
+        render: function() {
+            var square2Style = {
+                height: 50,
+                backgroundColor: '#206663',
+            }
+            return (
+                <div style={square2Style}>
+                    </div>
             );
         }
     });
 
     var Label = React.createClass({
         render: function() {
+            var labelStyle = {
+                fontWeight: 'bold',
+                fontFamily: 'Sans-serif',
+                padding: 10,
+                textAlign: 'center',
+                marginTop: 5
+            }
             
             return (
-                <p>Nothing to see here</p>
+                <p style={labelStyle}>Card's background color</p>
             );
         }
     });
+
+
+    
 
     var Card = React.createClass({
         render: function() {
             var cardStyle = {
                 height: 200,
-                width: 150,
-                backgroundColor: '#cff',
+                width: 400,
+                backgroundColor: '#f0f',
                 padding: 0,
                 WebkitFilter: "drop-shadow(0px 12px 15px #f66)",
                 filter: "drop-shadow(0px 2px 15px #f66)"
@@ -47,6 +74,9 @@ background-color: #fff;
             
             return (
                 <div style={cardStyle}>
+                    <Square/>
+                    <Square2/>
+                    <Label/>
                     
                 </div>
             );
