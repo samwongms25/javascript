@@ -20,7 +20,7 @@ background-color: #fff;
         render: function() {
             var squareStyle = {
                 height: 100,
-                backgroundColor: '#ff6663',
+                backgroundColor: this.props,
             }
             return (
                 <div style={squareStyle}>
@@ -33,7 +33,7 @@ background-color: #fff;
         render: function() {
             var square2Style = {
                 height: 50,
-                backgroundColor: '#206663',
+                backgroundColor: this.props.color,
             }
             return (
                 <div style={square2Style}>
@@ -49,11 +49,11 @@ background-color: #fff;
                 fontFamily: 'Sans-serif',
                 padding: 10,
                 textAlign: 'center',
-                marginTop: 5
+                marginTop: 50
             }
             
             return (
-                <p style={labelStyle}>Card's background color</p>
+                <p style={labelStyle}>{this.props.color}</p>
             );
         }
     });
@@ -64,9 +64,9 @@ background-color: #fff;
     var Card = React.createClass({
         render: function() {
             var cardStyle = {
-                height: 200,
-                width: 400,
-                backgroundColor: '#f0f',
+                height: 300,
+                width: 600,
+                backgroundColor: '#00fbff',
                 padding: 0,
                 WebkitFilter: "drop-shadow(0px 12px 15px #f66)",
                 filter: "drop-shadow(0px 2px 15px #f66)"
@@ -74,9 +74,10 @@ background-color: #fff;
             
             return (
                 <div style={cardStyle}>
-                    <Square/>
-                    <Square2/>
-                    <Label/>
+                    
+                    <Square2 color={this.props.color}/>
+                    <Square color={this.props.color}/>
+                    <Label color={this.props.color}/>
                     
                 </div>
             );
@@ -86,7 +87,7 @@ background-color: #fff;
 
     ReactDOM.render(
         <div>
-            <Card/>
+            <Card color="#ffa737"/>
         </div>,
         document.querySelector('#r')
     );
