@@ -1,15 +1,18 @@
 class Class_name {
-	constructor (name){
-		this.name = name;
+	constructor (number, name){
+		this.number = number;
+		this.name = "sam";
 		};
 		
-	method() {
-		console.log(`hi `, this.name);
+	method_name () {
+		console.log(`multiply by two: `, this.number * 2);
+		console.log(`my name is: `, this.name);
+		console.log(typeof(this.name));
 	
 		};
 	
 };
 
-const const_name = new Class_name ("sam");
+const const_name = new Class_name (6, "lemy");
 
-const_name.method();
+const_name.method_name ();
