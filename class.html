@@ -23,9 +23,11 @@
                 this.subjects = subjects;
             }
             display() {
-                console.log(`My Name is : ${this.name}, Age: ${this.age}, Gender: ${this.gender}, Subjects: ${this.subjects}`);
+                console.log(`My Name is : ${this.name}, Age * 2: ${this.age}, Gender: ${this.gender}, Subjects: ${this.subjects}`);
             }
         }
+        const one = new Student("John", 30, "M", "Biology");
+        one.display();
     </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
