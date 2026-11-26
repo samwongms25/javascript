@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-react-app</title>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  </head>
+  <body>
+    
+    <script>
+      function n() {
+        var p="Friend";
+        console.log(this);
+        console.log("hello this `comma` " + this,p);
+        console.log("hello this `period` " + this.p);
+        console.log("hello plus sign " + p);
+                  
+      };
+      n();
+      console.log("hello " + p);
+
+      //"use strict"
+      var j ={a: 100,
+          b:23,
+          c:function(e){
+          console.log(this, e*e*e);
+          }    
+      }
+
+      console.log(Math.sqrt(9*4));
+      j.c(3);
+
+    </script>
+  </body>
+</html>
