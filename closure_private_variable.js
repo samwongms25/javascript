@@ -14,5 +14,5 @@ const say = function(){
 }
 
 const creat = say();
-creat.send("Professor", "Wong");
+creat.send("Professor", "Lemy");
 console.log(creat.get());
